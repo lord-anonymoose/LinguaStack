@@ -15,7 +15,9 @@
 		8EF3BF872C84F0BC0074E6C7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */; };
 		8EF3BF892C84F1180074E6C7 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */; };
 		8EF3BF8B2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */; };
-		8EF3BF8F2C850B700074E6C7 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF8E2C850B700074E6C7 /* ViewExt.swift */; };
+		8EF6F1342C85C281005B8154 /* ConditionalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */; };
+		8EF6F1362C85C5E4005B8154 /* UIScreenExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */; };
+		8EF6F1382C85CE47005B8154 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1372C85CE47005B8154 /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,9 @@
 		8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingSFSymbolModifier.swift; sourceTree = "<group>"; };
-		8EF3BF8E2C850B700074E6C7 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonStyle.swift; sourceTree = "<group>"; };
+		8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExt.swift; sourceTree = "<group>"; };
+		8EF6F1372C85CE47005B8154 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +65,12 @@
 		8EF3BF752C84ED380074E6C7 /* LinguaStack */ = {
 			isa = PBXGroup;
 			children = (
-				8EF3BF8D2C8502B00074E6C7 /* Modifiers */,
 				8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */,
-				8EF3BF8C2C8502A40074E6C7 /* View */,
 				8EF3BF782C84ED380074E6C7 /* ContentView.swift */,
-				8EF3BF842C84ED600074E6C7 /* JailbreakView.swift */,
-				8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */,
-				8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */,
-				8EF3BF8E2C850B700074E6C7 /* ViewExt.swift */,
-				8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */,
+				8EF3BF8C2C8502A40074E6C7 /* View */,
+				8EF3BF8D2C8502B00074E6C7 /* Modifiers */,
+				8EF6F13B2C85D9CF005B8154 /* Services */,
+				8EF6F13A2C85D9BF005B8154 /* Extensions */,
 				8EF3BF7A2C84ED3A0074E6C7 /* Assets.xcassets */,
 				8EF3BF7C2C84ED3A0074E6C7 /* Preview Content */,
 			);
@@ -87,6 +88,9 @@
 		8EF3BF8C2C8502A40074E6C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */,
+				8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */,
+				8EF3BF842C84ED600074E6C7 /* JailbreakView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,8 +98,26 @@
 		8EF3BF8D2C8502B00074E6C7 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */,
+				8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		8EF6F13A2C85D9BF005B8154 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EF6F13B2C85D9CF005B8154 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8EF6F1372C85CE47005B8154 /* NotificationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "Filipp Lazarev";
 				TargetAttributes = {
 					8EF3BF722C84ED380074E6C7 = {
 						CreatedOnToolsVersion = 15.4;
@@ -170,9 +193,11 @@
 			files = (
 				8EF3BF792C84ED380074E6C7 /* ContentView.swift in Sources */,
 				8EF3BF892C84F1180074E6C7 /* NotificationsView.swift in Sources */,
+				8EF6F1342C85C281005B8154 /* ConditionalButtonStyle.swift in Sources */,
+				8EF6F1362C85C5E4005B8154 /* UIScreenExt.swift in Sources */,
+				8EF6F1382C85CE47005B8154 /* NotificationService.swift in Sources */,
 				8EF3BF8B2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift in Sources */,
 				8EF3BF852C84ED600074E6C7 /* JailbreakView.swift in Sources */,
-				8EF3BF8F2C850B700074E6C7 /* ViewExt.swift in Sources */,
 				8EF3BF772C84ED380074E6C7 /* LinguaStackApp.swift in Sources */,
 				8EF3BF872C84F0BC0074E6C7 /* WelcomeView.swift in Sources */,
 			);
@@ -233,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -290,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -311,11 +336,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LinguaStack;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,11 +368,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LinguaStack;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
