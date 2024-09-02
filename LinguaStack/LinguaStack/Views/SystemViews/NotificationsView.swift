@@ -12,8 +12,10 @@ struct NotificationsView: View {
     @State private var notificationTime = Date.now
     @State private var isSymbolAnimating = false
     
-    @State private var notificationDays = [true, true, true, true, true, true, true]
-    
+    @State private var notificationDayss = [true, true, true, true, true, true, true]
+
+    @State private var notificationDays = (0...6).map { _ in true}
+
     
     var body: some View {
         VStack {
@@ -35,25 +37,15 @@ struct NotificationsView: View {
                 }
             
             Text("Notifications")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.bottom, 20)
+                .titleLabel()
             
             Spacer()
             
             Text("For learning effectively, we recommend reviewing your vocabulary on a daily basis.")
-                .font(.title3)
-                .multilineTextAlignment(.center)
-                .padding(.leading, 20)
-                .padding(.trailing, 20)
-                .padding(.bottom, 20)
+                .mediumLabel()
             
             Text("Set a daily reminder for checking the app.")
-                .font(.title3)
-                .multilineTextAlignment(.center)
-                .padding(.leading, 20)
-                .padding(.trailing, 20)
-                .padding(.bottom, 20)
+                .mediumLabel()
             
             Spacer()
             

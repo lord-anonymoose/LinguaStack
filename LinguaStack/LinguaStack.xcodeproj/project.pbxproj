@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E05369D2C864B6D00EAD61E /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05369C2C864B6D00EAD61E /* TextModifiers.swift */; };
 		8EF3BF772C84ED380074E6C7 /* LinguaStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */; };
 		8EF3BF792C84ED380074E6C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF782C84ED380074E6C7 /* ContentView.swift */; };
 		8EF3BF7B2C84ED3A0074E6C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF3BF7A2C84ED3A0074E6C7 /* Assets.xcassets */; };
@@ -18,9 +19,11 @@
 		8EF6F1342C85C281005B8154 /* ConditionalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */; };
 		8EF6F1362C85C5E4005B8154 /* UIScreenExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */; };
 		8EF6F1382C85CE47005B8154 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F1372C85CE47005B8154 /* NotificationService.swift */; };
+		8EF6F13E2C85DA73005B8154 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6F13D2C85DA73005B8154 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E05369C2C864B6D00EAD61E /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
 		8EF3BF732C84ED380074E6C7 /* LinguaStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinguaStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaStackApp.swift; sourceTree = "<group>"; };
 		8EF3BF782C84ED380074E6C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonStyle.swift; sourceTree = "<group>"; };
 		8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExt.swift; sourceTree = "<group>"; };
 		8EF6F1372C85CE47005B8154 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8EF6F13D2C85DA73005B8154 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,7 @@
 			children = (
 				8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */,
 				8EF3BF782C84ED380074E6C7 /* ContentView.swift */,
-				8EF3BF8C2C8502A40074E6C7 /* View */,
+				8EF3BF8C2C8502A40074E6C7 /* Views */,
 				8EF3BF8D2C8502B00074E6C7 /* Modifiers */,
 				8EF6F13B2C85D9CF005B8154 /* Services */,
 				8EF6F13A2C85D9BF005B8154 /* Extensions */,
@@ -85,14 +89,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8EF3BF8C2C8502A40074E6C7 /* View */ = {
+		8EF3BF8C2C8502A40074E6C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */,
-				8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */,
-				8EF3BF842C84ED600074E6C7 /* JailbreakView.swift */,
+				8EF6F13C2C85DA5A005B8154 /* SystemViews */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8EF3BF8D2C8502B00074E6C7 /* Modifiers */ = {
@@ -100,6 +102,7 @@
 			children = (
 				8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */,
 				8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */,
+				8E05369C2C864B6D00EAD61E /* TextModifiers.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -118,6 +121,17 @@
 				8EF6F1372C85CE47005B8154 /* NotificationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8EF6F13C2C85DA5A005B8154 /* SystemViews */ = {
+			isa = PBXGroup;
+			children = (
+				8EF3BF862C84F0BC0074E6C7 /* WelcomeView.swift */,
+				8EF3BF882C84F1180074E6C7 /* NotificationsView.swift */,
+				8EF3BF842C84ED600074E6C7 /* JailbreakView.swift */,
+				8EF6F13D2C85DA73005B8154 /* SettingsView.swift */,
+			);
+			path = SystemViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,10 +210,12 @@
 				8EF6F1342C85C281005B8154 /* ConditionalButtonStyle.swift in Sources */,
 				8EF6F1362C85C5E4005B8154 /* UIScreenExt.swift in Sources */,
 				8EF6F1382C85CE47005B8154 /* NotificationService.swift in Sources */,
+				8EF6F13E2C85DA73005B8154 /* SettingsView.swift in Sources */,
 				8EF3BF8B2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift in Sources */,
 				8EF3BF852C84ED600074E6C7 /* JailbreakView.swift in Sources */,
 				8EF3BF772C84ED380074E6C7 /* LinguaStackApp.swift in Sources */,
 				8EF3BF872C84F0BC0074E6C7 /* WelcomeView.swift in Sources */,
+				8E05369D2C864B6D00EAD61E /* TextModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

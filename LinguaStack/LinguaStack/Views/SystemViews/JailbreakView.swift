@@ -20,27 +20,15 @@ struct JailbreakView: View {
             }
         
         Text("It looks like your device has been jailbroken")
-            .font(.title)
-            .fontWeight(.bold)
-            .multilineTextAlignment(.center)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
-            .padding(.bottom, 20)
+            .titleLabel()
         
         Spacer()
         
         Text("For safety and privacy reasons, we do not allow running LinguaStack App on devices with Jailbreak.")
-            .font(.title3)
-            .multilineTextAlignment(.center)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
-            .padding(.bottom, 20)
+            .mediumLabel()
         
         Text("If you would like to keep using our app, please mind switching to another device running supported iOS Version.")
-            .font(.title3)
-            .multilineTextAlignment(.center)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
+            .mediumLabel()
         
         Spacer()
     }
