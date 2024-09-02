@@ -3,7 +3,11 @@
 //  LinguaStack
 //
 //  Created by Philipp Lazarev on 01.09.2024.
+//  Copyright © 2024 Filipp Lazarev. All rights reserved.
 //
+
+
+// Following view is used for setting daily notifications for the app
 
 import SwiftUI
 

@@ -3,6 +3,7 @@
 //  LinguaStack
 //
 //  Created by Philipp Lazarev on 01.09.2024.
+//  Copyright © 2024 Filipp Lazarev. All rights reserved.
 //
 
 import Foundation
