@@ -12,33 +12,11 @@ struct WeekdaysSelectionView: View {
     
     @Binding var weekDays: [Bool]
     
-    
-    func numberToWeekday(_ number: Int) -> String {
-        switch number {
-        case 0:
-            return String(localized: "Mon")
-        case 1:
-            return String(localized: "Tue")
-        case 2:
-            return String(localized: "Wed")
-        case 3:
-            return String(localized: "Thu")
-        case 4:
-            return String(localized: "Fri")
-        case 5:
-            return String(localized: "Sat")
-        case 6:
-            return String(localized: "Sun")
-        default:
-            return "???"
-        }
-    }
-    
     var body: some View {
         VStack {
             HStack {
                 ForEach(weekDays.indices, id: \.self) { index in
-                    Button(numberToWeekday(index)) {
+                    Button(index.weekday() ?? "???") {
                         weekDays[index].toggle()
                     }
                     .buttonStyle(ConditionalButtonStyle(isActive: weekDays[index]))

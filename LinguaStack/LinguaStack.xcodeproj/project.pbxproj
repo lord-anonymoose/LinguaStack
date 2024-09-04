@@ -12,6 +12,7 @@
 		8E0536A12C8653D900EAD61E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E0536A02C8653D900EAD61E /* Localizable.xcstrings */; };
 		8E0536A32C8657EC00EAD61E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0536A22C8657EC00EAD61E /* CardView.swift */; };
 		8E0536A52C8657F600EAD61E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0536A42C8657F600EAD61E /* Model.swift */; };
+		8E537C452C88BFB500A0EC34 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E537C442C88BFB500A0EC34 /* StringExt.swift */; };
 		8EF3BF772C84ED380074E6C7 /* LinguaStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */; };
 		8EF3BF792C84ED380074E6C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3BF782C84ED380074E6C7 /* ContentView.swift */; };
 		8EF3BF7B2C84ED3A0074E6C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF3BF7A2C84ED3A0074E6C7 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		8E0536A02C8653D900EAD61E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8E0536A22C8657EC00EAD61E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8E0536A42C8657F600EAD61E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8E537C442C88BFB500A0EC34 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		8EF3BF732C84ED380074E6C7 /* LinguaStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinguaStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3BF762C84ED380074E6C7 /* LinguaStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaStackApp.swift; sourceTree = "<group>"; };
 		8EF3BF782C84ED380074E6C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				8EF6F1332C85C281005B8154 /* ConditionalButtonStyle.swift */,
-				8E0536A42C8657F600EAD61E /* Model.swift */,
 				8EF3BF8A2C85010E0074E6C7 /* AnimatingSFSymbolModifier.swift */,
 				8E05369C2C864B6D00EAD61E /* TextModifiers.swift */,
 			);
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF6F1352C85C5E4005B8154 /* UIScreenExt.swift */,
+				8E537C442C88BFB500A0EC34 /* StringExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF6F1372C85CE47005B8154 /* NotificationService.swift */,
+				8E0536A42C8657F600EAD61E /* Model.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				8EF3BF892C84F1180074E6C7 /* NotificationsView.swift in Sources */,
 				8EF6F1342C85C281005B8154 /* ConditionalButtonStyle.swift in Sources */,
 				8EF6F1362C85C5E4005B8154 /* UIScreenExt.swift in Sources */,
+				8E537C452C88BFB500A0EC34 /* StringExt.swift in Sources */,
 				8E05369F2C864E4000EAD61E /* WeekdaysSelectionView.swift in Sources */,
 				8EF6F1382C85CE47005B8154 /* NotificationService.swift in Sources */,
 				8EF6F13E2C85DA73005B8154 /* SettingsView.swift in Sources */,
