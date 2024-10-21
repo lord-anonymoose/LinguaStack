@@ -16,7 +16,7 @@ struct WeekdaysSelectionView: View {
         VStack {
             HStack {
                 ForEach(weekDays.indices, id: \.self) { index in
-                    Button(index.weekday() ?? "???") {
+                    Button(index.weekday() ?? "\(index)") {
                         weekDays[index].toggle()
                     }
                     .buttonStyle(ConditionalButtonStyle(isActive: weekDays[index]))

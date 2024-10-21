@@ -68,23 +68,6 @@
         }
       }
     },
-    "Fri" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fri"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пт"
-          }
-        }
-      }
-    },
     "Hello, World!" : {
 
     },
@@ -136,23 +119,6 @@
         }
       }
     },
-    "Mon" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mon"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пн"
-          }
-        }
-      }
-    },
     "None" : {
       "localizations" : {
         "en" : {
@@ -181,23 +147,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уведомления"
-          }
-        }
-      }
-    },
-    "Sat" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sat"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сб"
           }
         }
       }
@@ -250,40 +199,6 @@
         }
       }
     },
-    "Sun" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sun"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вс"
-          }
-        }
-      }
-    },
-    "Thu" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thu"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Чт"
-          }
-        }
-      }
-    },
     "Time to train your new vocabulary" : {
       "localizations" : {
         "en" : {
@@ -296,40 +211,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пора повторить новую лексику!"
-          }
-        }
-      }
-    },
-    "Tue" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tue"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вт"
-          }
-        }
-      }
-    },
-    "Wed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wed"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ср"
           }
         }
       }

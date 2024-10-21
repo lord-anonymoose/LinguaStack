@@ -11,7 +11,7 @@ import Foundation
 extension Int {
     func weekday() -> String? {
         let weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        if (0..<weekdays.count - 1).contains(self) {
+        if (0..<weekdays.count).contains(self) {
             return weekdays[self]
         } else {
             return nil
