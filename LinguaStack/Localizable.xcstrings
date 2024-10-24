@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "All" : {
       "localizations" : {
         "en" : {
@@ -69,7 +66,20 @@
       }
     },
     "Hello, World!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, World!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привет, мир!"
+          }
+        }
+      }
     },
     "Hi there!" : {
       "localizations" : {
@@ -151,6 +161,41 @@
         }
       }
     },
+    "Proceed" : {
+
+    },
+    "Reminder Time" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder Time"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время уведомления:"
+          }
+        }
+      }
+    },
+    "Reminder Time:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder Time:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время уведомления:"
+          }
+        }
+      }
+    },
     "Save settings" : {
       "localizations" : {
         "en" : {
@@ -199,6 +244,16 @@
         }
       }
     },
+    "This allows us to offer translations for the words you choose to learn. Please note that translations for certain languages may be subject to availability.\n\nPrimary language can later be changed in settings" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это позволяет нам предложить перевод слов, которые Вы выбрали для изучения. Обратите внимание, что перевод для некоторых языков может быть недоступен.\n\nОсновной язык можно будет изменить в позже настройках приложения."
+          }
+        }
+      }
+    },
     "Time to train your new vocabulary" : {
       "localizations" : {
         "en" : {
@@ -215,7 +270,18 @@
         }
       }
     },
+    "Welcome to LinguaStack!" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в LinguaStack!"
+          }
+        }
+      }
+    },
     "Welcome!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -227,6 +293,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добро пожаловать!"
+          }
+        }
+      }
+    },
+    "What is your native language?" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите родной язык"
           }
         }
       }

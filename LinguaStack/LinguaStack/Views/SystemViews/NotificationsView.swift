@@ -51,14 +51,18 @@ struct NotificationsView: View {
             
             Spacer()
             
-            WeekdaysSelectionView(weekDays: $notificationDays)
-
+            HStack {
+                Text("Reminder Time:")
+                
+                DatePicker("Reminder Time",selection: $notificationTime, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                    .padding(.leading, 50)
+                    .padding(.trailing, 50)
+            }
+            
             Spacer()
             
-            DatePicker("", selection: $notificationTime, displayedComponents: .hourAndMinute)
-                .labelsHidden()
-                .padding(.leading, 50)
-                .padding(.trailing, 50)
+            WeekdaysSelectionView(weekDays: $notificationDays)
             
             Spacer()
             

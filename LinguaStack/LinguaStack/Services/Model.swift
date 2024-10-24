@@ -13,10 +13,11 @@ import SwiftUI
 
 struct Card {
     var word: String
-    var translation: String?
     var definition: String?
     var context: String?
     var image: Image?
+    
+    var tags: [String]?
     
     init(word: String) {
         self.word = word
@@ -24,7 +25,7 @@ struct Card {
 }
 
 
-struct Stack {
+struct Deck {
     var name: String
     var cards: [Card]?
     
